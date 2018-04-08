@@ -153,6 +153,9 @@ footer {
 	.header-pretitle {
 		margin-top: 60px;
 	}
+	.portfolio-header-two {
+		min-height: 44px;
+	}
 }
 
 @media (max-width: 992px) {
