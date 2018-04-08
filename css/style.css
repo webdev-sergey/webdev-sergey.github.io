@@ -153,8 +153,11 @@ footer {
 	.header-pretitle {
 		margin-top: 60px;
 	}
-	.portfolio-header-two {
+	.portfolio-col-2-header {
 		min-height: 44px;
+	}
+	.portfolio-text {
+		min-height: 119px;
 	}
 }
 
