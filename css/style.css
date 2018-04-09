@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: 'Roboto';
@@ -42,15 +46,19 @@ header {
 .header-button:hover {
 	box-shadow: none;
 }
+
+header-button{
+	text-align: center;
+}
 header small {
 	font-size: 12px;
 	display: block;
 	text-align: center;
 	margin-top: 9px;
+	max-width: 202px;
 }
-.header-button-block {
-	max-width: 210px;
-}
+
+
 
 /*Секция портфолио*/
 .portfolio {
@@ -80,9 +88,11 @@ header small {
 }
 .portfolio-col-1 {
 	padding-left: 50px;
+	margin-left: 50px;
 }
 .portfolio-col-2 {
 	padding-right: 50px;
+	margin-right: 50px;
 }
 .portfolio-block h3 {
   color: #072b6f;
@@ -100,7 +110,7 @@ header small {
 	color: #8f8f8f;
 	font-size: 14px;
 	font-weight: 400;
-	min-height: 80px;
+	min-height: 68px;
 }
 /*Оформление подвала*/
 footer {
@@ -168,8 +178,17 @@ footer {
 	.header-pretitle {
 		margin-top: 10px;
 	}
+	.header-pretitle, .header-title, .header-subtitle {
+		text-align: center;
+	}
+	.header-bt {
+    text-align: center;
+	}
+	.portfolio-col-2-header {
+		min-height: 66px;
+	}
 	.portfolio-text {
-		min-height: 119px;
+		min-height: 136px;
 	}
 	.footer-author {
 		font-size: 18px;
@@ -188,17 +207,40 @@ footer {
 		font-size: 14px;
 		padding: 8px 35px;
 	}
+	.header-button-block {
+	text-align: center;
+}
+
+header small {
+	max-width: 686px;
+}
+
 }
 
 @media (max-width: 768px) {
+	.header-pretitle, .header-title, .header-subtitle {
+		text-align: center;
+	}
 	.portfolio-col-1 {
+		margin: 0;
 		padding-left: 25px;
 		padding-right: 20px;
 		padding-bottom: 40px;
 	}
 	.portfolio-col-2 {
+		margin: 0;
 		padding-left: 25px;
 		padding-right: 20px;
+	}
+	.portfolio-col-2-header {
+		min-height: 22px;
+	}
+	.portfolio-text {
+		min-height: 90px;
+	}
+	footer {
+		padding-top: 30px;
+		padding-bottom: 70px;
 	}
 	.footer-author, .footer-text {
 		text-align: center;
